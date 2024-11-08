@@ -172,7 +172,7 @@ ol {
 }
 
 .visually-hidden {
-  position: absolute;
+  position: relative;
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
@@ -189,10 +189,13 @@ ol {
   gap: 5px;
 }
 
+.search-form__fieldset:nth-child(2) {
+  align-self: flex-start;
+}
+
 .search-form__label {
   width: fit-content;
   display: flex;
-  gap: 5px;
   align-items: center;
   cursor: pointer;
 }
@@ -257,7 +260,7 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display: block;
-  position: absolute;
+  position: relative;
   margin: 1px;
   content: "";
   inline-size: 15px;
