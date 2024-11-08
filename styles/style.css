@@ -54,10 +54,10 @@ ol {
 
 .content__list {
   display: flex;
+  flex-direction: column;
   position: relative;
   overflow-y: scroll;
   block-size: 298px;
-  flex-direction: column;
   gap: 30px;
 }
 
